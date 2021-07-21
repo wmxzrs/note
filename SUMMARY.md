@@ -2,8 +2,16 @@
 
 * [ReadMe](README.md)
 
-## 博客部署
+## 我的笔记
 
-* [hexo](bo-ke-bu-shu/hexo.md)
-* [gitbook 部署到 gitpages服务](bo-ke-bu-shu/gitbook-bu-shu-dao-gitpages-fu-wu.md)
+* [JavaScript](wo-de-bi-ji/javascript.md)
+* [css](wo-de-bi-ji/css.md)
+* [git](wo-de-bi-ji/git.md)
+* [mysql&php](wo-de-bi-ji/mysql-and-php.md)
+* [html](wo-de-bi-ji/html.md)
+* [shell](wo-de-bi-ji/shell.md)
+
+## 我的书籍
+
+* [夜色](wo-de-shu-ji/ye-se.md)
 
