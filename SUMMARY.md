@@ -14,5 +14,5 @@
 
 ## 我的书籍
 
-* [夜色](wo-de-shu-ji/ye-se.md)
+* [只言片语](wo-de-shu-ji/ye-se.md)
 
