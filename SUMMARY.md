@@ -14,5 +14,5 @@
 
 ## 我的书籍
 
-* [只言片语](wo-de-shu-ji/ye-se.md)
+* [序章](wo-de-shu-ji/ye-se.md)
 
