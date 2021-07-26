@@ -29,6 +29,6 @@
 * [SSH 端口转发](ssh/ssh-duan-kou-zhuan-fa.md)
 * [SSH 证书登录](ssh/ssh-zheng-shu-deng-lu.md)
 * [scp 命令](ssh/scp-ming-ling.md)
-* [Untitled](ssh/untitled-2.md)
-* [Untitled](ssh/untitled-1.md)
+* [rsync 命令](ssh/untitled-2.md)
+* [sftp 命令](ssh/untitled-1.md)
 

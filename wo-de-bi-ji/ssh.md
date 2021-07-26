@@ -1997,8 +1997,6 @@ $ scp -v ~/test.txt root@192.168.1.3:/root/help2356.txt
 
 ## rsync 命令
 
-
-
   
 rsync 是一个常用的 Linux 应用程序，用于文件同步。
 
