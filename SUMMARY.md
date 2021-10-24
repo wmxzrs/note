@@ -14,7 +14,13 @@
 
 ## 我的书籍
 
-* [序章](wo-de-shu-ji/ye-se.md)
+### 随想
+
+* [序章](wo-de-shu-ji/imagine/ye-se.md)
+
+### 小说
+
+* [第一章](wo-de-shu-ji/novel/chapter1.md)
 
 ## Coding Note
 
@@ -31,4 +37,3 @@
 * [scp 命令](ssh/scp-ming-ling.md)
 * [rsync 命令](ssh/untitled-2.md)
 * [sftp 命令](ssh/untitled-1.md)
-
