@@ -1,4 +1,4 @@
-# ReadMe
+# gitbook Doc
 
 ### hexo
 
@@ -14,7 +14,6 @@
 
 3、在gitbook官网中启用web hook并选择部署分支
 
+~~在gitbook网站上写文档并提交合并，从github上pull下来合并后重用部署脚本完成部署。master分支生产环境，main为页面储存。~~
 
-在gitbook网站上写文档并提交合并，从github上pull下来合并后重新用部署脚本完成部署。
-master分支生产环境，main为页面储存。
-
+gitbook现在在本地仓库编辑部署。
