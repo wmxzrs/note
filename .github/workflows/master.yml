@@ -35,6 +35,8 @@ jobs:
              ls -R
              cd ./_book
              git init
+             git config user.name "actionscript"
+             git config user.email "wmxzrs@outlook.com"
              git remote add origin "https://wmxzrs:$NOTE_DEPLOY_KEY@github.com/wmxzrs/note.git"
              git add -A
              git commit -m "Action-Script auto deploy at '$(date)'"
