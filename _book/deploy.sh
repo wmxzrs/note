@@ -18,8 +18,6 @@ echo "uploader:"
 git config user.email "wmxzrs@outlook.com"
 git config user.name "deployer"
 
-
-
 # 保存所有的修改
 echo "执行命令：git add -A"
 git add -A
@@ -32,7 +30,6 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 echo "执行命令：git push -f git@github.com:wmxzrs/note master:main"
 git push origin main -f
-
 
 # 返回到上一次的工作目录
 echo "回到刚才工作目录"

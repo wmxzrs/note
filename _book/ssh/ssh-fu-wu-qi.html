@@ -1,0 +1,732 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSH 服务器 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ssh-duan-kou-zhuan-fa.html" />
+    
+    
+    <link rel="prev" href="ssh-mi-yao-deng-lu.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ReadMe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">我的笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../wo-de-bi-ji/javascript.html">
+            
+                <a href="../wo-de-bi-ji/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../wo-de-bi-ji/css.html">
+            
+                <a href="../wo-de-bi-ji/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../wo-de-bi-ji/git.html">
+            
+                <a href="../wo-de-bi-ji/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../wo-de-bi-ji/ssh.html">
+            
+                <a href="../wo-de-bi-ji/ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../wo-de-bi-ji/mysql-and-php.html">
+            
+                <a href="../wo-de-bi-ji/mysql-and-php.html">
+            
+                    
+                    mysql&php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../wo-de-bi-ji/html.html">
+            
+                <a href="../wo-de-bi-ji/html.html">
+            
+                    
+                    html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../wo-de-bi-ji/shell.html">
+            
+                <a href="../wo-de-bi-ji/shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">我的书籍</li>
+        
+        
+    
+
+    
+        
+        <li class="header">随想</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../wo-de-shu-ji/imagine/ye-se.html">
+            
+                <a href="../wo-de-shu-ji/imagine/ye-se.html">
+            
+                    
+                    序章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">小说</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../wo-de-shu-ji/novel/chapter1.html">
+            
+                <a href="../wo-de-shu-ji/novel/chapter1.html">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Note</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../coding-note/untitled.html">
+            
+                <a href="../coding-note/untitled.html">
+            
+                    
+                    云函数 | serverless
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SSH</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="untitled.html">
+            
+                <a href="untitled.html">
+            
+                    
+                    SSH 基本知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ssh-ke-hu-duan.html">
+            
+                <a href="ssh-ke-hu-duan.html">
+            
+                    
+                    SSH 客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="ssh-mi-yao-deng-lu.html">
+            
+                <a href="ssh-mi-yao-deng-lu.html">
+            
+                    
+                    SSH 密钥登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.4" data-path="ssh-fu-wu-qi.html">
+            
+                <a href="ssh-fu-wu-qi.html">
+            
+                    
+                    SSH 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="ssh-duan-kou-zhuan-fa.html">
+            
+                <a href="ssh-duan-kou-zhuan-fa.html">
+            
+                    
+                    SSH 端口转发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="ssh-zheng-shu-deng-lu.html">
+            
+                <a href="ssh-zheng-shu-deng-lu.html">
+            
+                    
+                    SSH 证书登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="scp-ming-ling.html">
+            
+                <a href="scp-ming-ling.html">
+            
+                    
+                    scp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="untitled-2.html">
+            
+                <a href="untitled-2.html">
+            
+                    
+                    rsync 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="untitled-1.html">
+            
+                <a href="untitled-1.html">
+            
+                    
+                    sftp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SSH 服务器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssh-&#x670D;&#x52A1;&#x5668;">SSH &#x670D;&#x52A1;&#x5668;</h1>
+<h3 id="&#x7B80;&#x4ECB;-">&#x7B80;&#x4ECB; <a id="&#x7B80;&#x4ECB;"></a></h3>
+<p>SSH &#x7684;&#x67B6;&#x6784;&#x662F;&#x670D;&#x52A1;&#x5668;/&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;&#xFF0C;&#x4E24;&#x7AEF;&#x8FD0;&#x884C;&#x7684;&#x8F6F;&#x4EF6;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;OpenSSH &#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8F6F;&#x4EF6;&#x662F; ssh&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x8F6F;&#x4EF6;&#x662F; sshd&#x3002;&#x672C;&#x7AE0;&#x4ECB;&#x7ECD; sshd &#x7684;&#x5404;&#x79CD;&#x77E5;&#x8BC6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B89;&#x88C5; sshd&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-text"># Debian
+$ sudo aptitude install openssh-server
+
+# Red Hat
+$ sudo yum install openssh-server
+</code></pre>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;sshd &#x5B89;&#x88C5;&#x540E;&#x4F1A;&#x8DDF;&#x7740;&#x7CFB;&#x7EDF;&#x4E00;&#x8D77;&#x542F;&#x52A8;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D; sshd &#x6CA1;&#x6709;&#x542F;&#x52A8;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x542F;&#x52A8;&#x3002;</p>
+<pre><code class="lang-text">$ sshd
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x63D0;&#x793A;&#x201C;sshd re-exec requires execution with an absolute path&#x201D;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6765;&#x542F;&#x52A8;&#x3002;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x6709;&#x4EBA;&#x51FA;&#x4E8E;&#x5404;&#x79CD;&#x76EE;&#x7684;&#xFF0C;&#x653E;&#x7F6E;&#x540C;&#x540D;&#x8F6F;&#x4EF6;&#x5728;<code>$PATH</code>&#x53D8;&#x91CF;&#x6307;&#x5411;&#x7684;&#x76EE;&#x5F55;&#x4E2D;&#xFF0C;&#x4EE3;&#x66FF;&#x771F;&#x6B63;&#x7684; sshd&#x3002;</p>
+<pre><code class="lang-text"># Centos&#x3001;Ubuntu&#x3001;OS X
+$ /usr/sbin/sshd
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#x4EE5;&#x540E;&#xFF0C;sshd &#x81EA;&#x52A8;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#xFF0C;&#x6240;&#x4EE5;&#x547D;&#x4EE4;&#x540E;&#x9762;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x4E0A;<code>&amp;</code>&#x3002;</p>
+<p>&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x8FD0;&#x884C;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Systemd &#x542F;&#x52A8; sshd&#x3002;</p>
+<pre><code class="lang-text"># &#x542F;&#x52A8;
+$ sudo systemctl start sshd.service
+
+# &#x505C;&#x6B62;
+$ sudo systemctl stop sshd.service
+
+# &#x91CD;&#x542F;
+$ sudo systemctl restart sshd.service
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x8BA9; sshd &#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E0B;&#x6B21;&#x542F;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x8FD0;&#x884C;&#x3002;</p>
+<pre><code class="lang-text">$ sudo systemctl enable sshd.service
+</code></pre>
+<h3 id="sshd-&#x914D;&#x7F6E;&#x6587;&#x4EF6;-">sshd &#x914D;&#x7F6E;&#x6587;&#x4EF6; <a id="sshd-&#x914D;&#x7F6E;&#x6587;&#x4EF6;"></a></h3>
+<p>sshd &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;<code>/etc/ssh</code>&#x76EE;&#x5F55;&#xFF0C;&#x4E3B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;<code>sshd_config</code>&#xFF0C;&#x6B64;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5B89;&#x88C5;&#x65F6;&#x751F;&#x6210;&#x7684;&#x5BC6;&#x94A5;&#x3002;</p>
+<ul>
+<li><code>/etc/ssh/sshd_config</code>&#xFF1A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+<li><code>/etc/ssh/ssh_host_ecdsa_key</code>&#xFF1A;ECDSA &#x79C1;&#x94A5;&#x3002;</li>
+<li><code>/etc/ssh/ssh_host_ecdsa_key.pub</code>&#xFF1A;ECDSA &#x516C;&#x94A5;&#x3002;</li>
+<li><code>/etc/ssh/ssh_host_key</code>&#xFF1A;&#x7528;&#x4E8E; SSH 1 &#x534F;&#x8BAE;&#x7248;&#x672C;&#x7684; RSA &#x79C1;&#x94A5;&#x3002;</li>
+<li><code>/etc/ssh/ssh_host_key.pub</code>&#xFF1A;&#x7528;&#x4E8E; SSH 1 &#x534F;&#x8BAE;&#x7248;&#x672C;&#x7684; RSA &#x516C;&#x94A5;&#x3002;</li>
+<li><code>/etc/ssh/ssh_host_rsa_key</code>&#xFF1A;&#x7528;&#x4E8E; SSH 2 &#x534F;&#x8BAE;&#x7248;&#x672C;&#x7684; RSA &#x79C1;&#x94A5;&#x3002;</li>
+<li><code>/etc/ssh/ssh_host_rsa_key.pub</code>&#xFF1A;&#x7528;&#x4E8E; SSH 2 &#x534F;&#x8BAE;&#x7248;&#x672C;&#x7684; RSA &#x516C;&#x94A5;&#x3002;</li>
+<li><code>/etc/pam.d/sshd</code>&#xFF1A;PAM &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;</li>
+</ul>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x91CD;&#x88C5; sshd&#xFF0C;&#x4E0A;&#x9762;&#x8FD9;&#x4E9B;&#x5BC6;&#x94A5;&#x90FD;&#x4F1A;&#x91CD;&#x65B0;&#x751F;&#x6210;&#xFF0C;&#x5BFC;&#x81F4;&#x5BA2;&#x6237;&#x7AEF;&#x91CD;&#x65B0; ssh &#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x65F6;&#xFF0C;&#x4F1A;&#x8DF3;&#x51FA;&#x8B66;&#x544A;&#xFF0C;&#x62D2;&#x7EDD;&#x8FDE;&#x63A5;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x91CD;&#x88C5; sshd &#x65F6;&#xFF0C;&#x5148;&#x5907;&#x4EFD;<code>/etc/ssh</code>&#x76EE;&#x5F55;&#xFF0C;&#x91CD;&#x88C5;&#x540E;&#x518D;&#x6062;&#x590D;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>sshd_config</code>&#x7684;&#x683C;&#x5F0F;&#x662F;&#xFF0C;&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x5360;&#x636E;&#x4E00;&#x884C;&#x3002;&#x6BCF;&#x884C;&#x90FD;&#x662F;&#x914D;&#x7F6E;&#x9879;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x914D;&#x7F6E;&#x9879;&#x7684;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#xFF0C;&#x4E0E;&#x503C;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002;</p>
+<pre><code class="lang-text">Port 2034
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#xFF0C;&#x914D;&#x7F6E;&#x9879;<code>Port</code>&#x7684;&#x503C;&#x662F;<code>2034</code>&#x3002;<code>Port</code>&#x5199;&#x6210;<code>port</code>&#x4E5F;&#x53EF;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8FD8;&#x6709;&#x53E6;&#x4E00;&#x79CD;&#x683C;&#x5F0F;&#xFF0C;&#x5C31;&#x662F;&#x914D;&#x7F6E;&#x9879;&#x4E0E;&#x503C;&#x4E4B;&#x95F4;&#x6709;&#x4E00;&#x4E2A;&#x7B49;&#x53F7;&#xFF0C;&#x7B49;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#x53EF;&#x9009;&#x3002;</p>
+<pre><code class="lang-text">Port = 2034
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#xFF0C;<code>#</code>&#x5F00;&#x5934;&#x7684;&#x884C;&#x8868;&#x793A;&#x6CE8;&#x91CA;&#x3002;</p>
+<pre><code class="lang-text"># &#x8FD9;&#x662F;&#x4E00;&#x884C;&#x6CE8;&#x91CA;
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x6CE8;&#x91CA;&#x53EA;&#x80FD;&#x653E;&#x5728;&#x4E00;&#x884C;&#x7684;&#x5F00;&#x5934;&#xFF0C;&#x4E0D;&#x80FD;&#x653E;&#x5728;&#x4E00;&#x884C;&#x7684;&#x7ED3;&#x5C3E;&#x3002;</p>
+<pre><code class="lang-text">Port 2034 # &#x6B64;&#x5904;&#x4E0D;&#x5141;&#x8BB8;&#x6CE8;&#x91CA;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x5199;&#x6CD5;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x7A7A;&#x884C;&#x7B49;&#x540C;&#x4E8E;&#x6CE8;&#x91CA;&#x3002;</p>
+<p>sshd &#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x81EA;&#x52A8;&#x8BFB;&#x53D6;&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; sshd &#x547D;&#x4EE4;&#x7684;<code>-f</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -f /usr/local/ssh/my_config
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x6307;&#x5B9A; sshd &#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>my_config</code>&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528; sshd &#x547D;&#x4EE4;&#x7684;<code>-t</code>&#xFF08;test&#xFF09;&#x68C0;&#x67E5;&#x6709;&#x6CA1;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -t
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x4EE5;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6548;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x542F;&#x52A8; sshd&#x3002;</p>
+<pre><code class="lang-text">$ sudo systemctl restart sshd.service
+</code></pre>
+<h3 id="sshd-&#x5BC6;&#x94A5;-">sshd &#x5BC6;&#x94A5; <a id="sshd-&#x5BC6;&#x94A5;"></a></h3>
+<p>sshd &#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x5BF9;&#x6216;&#x591A;&#x5BF9;&#x5BC6;&#x94A5;&#x3002;&#x5B83;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8BC1;&#x660E;&#x81EA;&#x5DF1;&#x7684;&#x8EAB;&#x4EFD;&#x3002;&#x6240;&#x6709;&#x5BC6;&#x94A5;&#x90FD;&#x662F;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x6210;&#x5BF9;&#x51FA;&#x73B0;&#xFF0C;&#x516C;&#x94A5;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x4E00;&#x822C;&#x662F;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x540D;&#x52A0;&#x4E0A;&#x540E;&#x7F00;<code>.pub</code>&#x3002;</p>
+<p>DSA &#x683C;&#x5F0F;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4E3A;<code>/etc/ssh/ssh_host_dsa_key</code>&#xFF08;&#x516C;&#x94A5;&#x4E3A;<code>ssh_host_dsa_key.pub</code>&#xFF09;&#xFF0C;RSA &#x683C;&#x5F0F;&#x7684;&#x5BC6;&#x94A5;&#x4E3A;<code>/etc/ssh/ssh_host_rsa_key</code>&#xFF08;&#x516C;&#x94A5;&#x4E3A;<code>ssh_host_rsa_key.pub</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x652F;&#x6301; SSH 1 &#x534F;&#x8BAE;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x6709;&#x5BC6;&#x94A5;<code>/etc/ssh/ssh_host_key</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5BC6;&#x94A5;&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>sshd_config</code>&#x7684;<code>HostKey</code>&#x914D;&#x7F6E;&#x9879;&#x6307;&#x5B9A;&#x3002;&#x9ED8;&#x8BA4;&#x5BC6;&#x94A5;&#x7684;<code>HostKey</code>&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-text"># HostKey for protocol version 1
+# HostKey /etc/ssh/ssh_host_key
+
+# HostKeys for protocol version 2
+# HostKey /etc/ssh/ssh_host_rsa_key
+# HostKey /etc/ssh/ssh_host_dsa_ke
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x524D;&#x9762;&#x7684;<code>#</code>&#x8868;&#x793A;&#x8FD9;&#x4E9B;&#x884C;&#x90FD;&#x662F;&#x6CE8;&#x91CA;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x6709;&#x6CA1;&#x6709;&#x8FD9;&#x51E0;&#x884C;&#x90FD;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x4FEE;&#x6539;&#x5BC6;&#x94A5;&#xFF0C;&#x5C31;&#x8981;&#x53BB;&#x6389;&#x884C;&#x9996;&#x7684;<code>#</code>&#xFF0C;&#x6307;&#x5B9A;&#x5176;&#x4ED6;&#x5BC6;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">HostKey /usr/local/ssh/my_dsa_key
+HostKey /usr/local/ssh/my_rsa_key
+HostKey /usr/local/ssh/my_old_ssh1_key
+</code></pre>
+<h3 id="sshd-&#x914D;&#x7F6E;&#x9879;-">sshd &#x914D;&#x7F6E;&#x9879; <a id="sshd-&#x914D;&#x7F6E;&#x9879;"></a></h3>
+<p>&#x4EE5;&#x4E0B;&#x662F;<code>/etc/ssh/sshd_config</code>&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x3002;</p>
+<p><strong>AcceptEnv</strong></p>
+<p><code>AcceptEnv</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x63A5;&#x53D7;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;<code>SendEnv</code>&#x547D;&#x4EE4;&#x53D1;&#x6765;&#x7684;&#x54EA;&#x4E9B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5373;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x8BBE;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6E05;&#x5355;&#xFF0C;&#x53D8;&#x91CF;&#x540D;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF08;<code>AcceptEnv PATH TERM</code>&#xFF09;&#x3002;</p>
+<p><strong>AllowGroups</strong></p>
+<p><code>AllowGroups</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x7EC4;&#xFF08;<code>AllowGroups groupName</code>&#xFF0C;&#x591A;&#x4E2A;&#x7EC4;&#x4E4B;&#x95F4;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x8BE5;&#x9879;&#xFF0C;&#x5219;&#x5141;&#x8BB8;&#x6240;&#x6709;&#x7528;&#x6237;&#x7EC4;&#x767B;&#x5F55;&#x3002;</p>
+<p><strong>AllowUsers</strong></p>
+<p><code>AllowUsers</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x7528;&#x6237;&#x540D;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF08;<code>AllowUsers user1 user2</code>&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x884C;<code>AllowUsers</code>&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#xFF0C;&#x7528;&#x6237;&#x540D;&#x652F;&#x6301;&#x4F7F;&#x7528;&#x901A;&#x914D;&#x7B26;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x4F7F;&#x7528;&#x8BE5;&#x9879;&#xFF0C;&#x5219;&#x5141;&#x8BB8;&#x6240;&#x6709;&#x7528;&#x6237;&#x767B;&#x5F55;&#x3002;&#x8BE5;&#x9879;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&#x7528;&#x6237;&#x540D;@&#x57DF;&#x540D;</code>&#x7684;&#x683C;&#x5F0F;&#xFF08;&#x6BD4;&#x5982;<code>AllowUsers jones@example.com</code>&#xFF09;&#x3002;</p>
+<p><strong>AllowTcpForwarding</strong></p>
+<p><code>AllowTcpForwarding</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>AllowTcpForwarding yes</code>&#xFF09;&#xFF0C;<code>local</code>&#x8868;&#x793A;&#x53EA;&#x5141;&#x8BB8;&#x672C;&#x5730;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#xFF0C;<code>remote</code>&#x8868;&#x793A;&#x53EA;&#x5141;&#x8BB8;&#x8FDC;&#x7A0B;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x3002;</p>
+<p><strong>AuthorizedKeysFile</strong></p>
+<p><code>AuthorizedKeysFile</code>&#x6307;&#x5B9A;&#x50A8;&#x5B58;&#x7528;&#x6237;&#x516C;&#x94A5;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x7684;<code>ssh/authorized_keys</code>&#x76EE;&#x5F55;&#xFF08;<code>AuthorizedKeysFile .ssh/authorized_keys</code>&#xFF09;&#x3002;</p>
+<p><strong>Banner</strong></p>
+<p><code>Banner</code>&#x6307;&#x5B9A;&#x7528;&#x6237;&#x767B;&#x5F55;&#x540E;&#xFF0C;sshd &#x5411;&#x5176;&#x5C55;&#x793A;&#x7684;&#x4FE1;&#x606F;&#x6587;&#x4EF6;&#xFF08;<code>Banner /usr/local/etc/warning.txt</code>&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E0D;&#x5C55;&#x793A;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>ChallengeResponseAuthentication</strong></p>
+<p><code>ChallengeResponseAuthentication</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x201C;&#x952E;&#x76D8;&#x4EA4;&#x4E92;&#x201D;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65B9;&#x6848;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>ChallengeResponseAuthentication yes</code>&#xFF09;&#x3002;</p>
+<p>&#x4ECE;&#x7406;&#x8BBA;&#x4E0A;&#x8BB2;&#xFF0C;&#x201C;&#x952E;&#x76D8;&#x4EA4;&#x4E92;&#x201D;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65B9;&#x6848;&#x53EF;&#x4EE5;&#x5411;&#x7528;&#x6237;&#x8BE2;&#x95EE;&#x591A;&#x91CD;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x8DF5;&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x4EC5;&#x8BE2;&#x95EE;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x3002;&#x5982;&#x679C;&#x8981;&#x5B8C;&#x5168;&#x7981;&#x7528;&#x57FA;&#x4E8E;&#x5BC6;&#x7801;&#x7684;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x8BF7;&#x5C06;<code>PasswordAuthentication</code>&#x548C;<code>ChallengeResponseAuthentication</code>&#x90FD;&#x8BBE;&#x7F6E;&#x4E3A;<code>no</code>&#x3002;</p>
+<p><strong>Ciphers</strong></p>
+<p><code>Ciphers</code>&#x6307;&#x5B9A; sshd &#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF08;<code>Ciphers 3des-cbc</code>&#xFF09;&#xFF0C;&#x591A;&#x4E2A;&#x7B97;&#x6CD5;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<p><strong>ClientAliveCountMax</strong></p>
+<p><code>ClientAliveCountMax</code>&#x6307;&#x5B9A;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x540E;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5931;&#x53BB;&#x54CD;&#x5E94;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x7684;&#x6B21;&#x6570;&#xFF08;<code>ClientAliveCountMax 8</code>&#xFF09;&#x3002;</p>
+<p><strong>ClientAliveInterval</strong></p>
+<p><code>ClientAliveInterval</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x5446;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#xFF08;<code>ClientAliveInterval 180</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x91CC;&#x9762;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x4EFB;&#x4F55;&#x4FE1;&#x53F7;&#xFF0C;SSH &#x8FDE;&#x63A5;&#x5C06;&#x5173;&#x95ED;&#x3002;</p>
+<p><strong>Compression</strong></p>
+<p><code>Compression</code>&#x6307;&#x5B9A;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x662F;&#x5426;&#x538B;&#x7F29;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>Compression yes</code>&#xFF09;</p>
+<p><strong>DenyGroups</strong></p>
+<p><code>DenyGroups</code>&#x6307;&#x5B9A;&#x4E0D;&#x5141;&#x8BB8;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x7EC4;&#xFF08;<code>DenyGroups groupName</code>&#xFF09;&#x3002;</p>
+<p><strong>DenyUsers</strong></p>
+<p><code>DenyUsers</code>&#x6307;&#x5B9A;&#x4E0D;&#x5141;&#x8BB8;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#xFF08;<code>DenyUsers user1</code>&#xFF09;&#xFF0C;&#x7528;&#x6237;&#x540D;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x884C;<code>DenyUsers</code>&#x547D;&#x4EE4;&#x6307;&#x5B9A;&#x3002;</p>
+<p><strong>FascistLogging</strong></p>
+<p>SSH 1 &#x7248;&#x672C;&#x4E13;&#x7528;&#xFF0C;&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x5168;&#x90E8; Debug &#x4FE1;&#x606F;&#xFF08;<code>FascistLogging yes</code>&#xFF09;&#x3002;</p>
+<p><strong>HostKey</strong></p>
+<p><code>HostKey</code>&#x6307;&#x5B9A; sshd &#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x8BE6;&#x89C1;&#x524D;&#x6587;&#x3002;</p>
+<p><strong>KeyRegenerationInterval</strong></p>
+<p><code>KeyRegenerationInterval</code>&#x6307;&#x5B9A; SSH 1 &#x7248;&#x672C;&#x7684;&#x5BC6;&#x94A5;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;3600&#x79D2;&#xFF08;<code>KeyRegenerationInterval 3600</code>&#xFF09;&#x3002;</p>
+<p><strong>ListenAddress</strong></p>
+<p><code>ListenAddress</code>&#x6307;&#x5B9A; sshd &#x76D1;&#x542C;&#x7684;&#x672C;&#x673A; IP &#x5730;&#x5740;&#xFF0C;&#x5373; sshd &#x542F;&#x7528;&#x7684; IP &#x5730;&#x5740;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; 0.0.0.0&#xFF08;<code>ListenAddress 0.0.0.0</code>&#xFF09;&#x8868;&#x793A;&#x5728;&#x672C;&#x673A;&#x6240;&#x6709;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x542F;&#x7528;&#x3002;&#x53EF;&#x4EE5;&#x6539;&#x6210;&#x53EA;&#x5728;&#x67D0;&#x4E2A;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x542F;&#x7528;&#xFF08;&#x6BD4;&#x5982;<code>ListenAddress 192.168.10.23</code>&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x67D0;&#x4E2A;&#x57DF;&#x540D;&#x542F;&#x7528;&#xFF08;&#x6BD4;&#x5982;<code>ListenAddress server.example.com</code>&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x76D1;&#x542C;&#x591A;&#x4E2A;&#x6307;&#x5B9A;&#x7684; IP &#x5730;&#x5740;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x884C;<code>ListenAddress</code>&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-text">ListenAddress 172.16.1.1
+ListenAddress 192.168.0.1
+</code></pre>
+<p><strong>LoginGraceTime</strong></p>
+<p><code>LoginGraceTime</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x5BA2;&#x6237;&#x7AEF;&#x767B;&#x5F55;&#x65F6;&#x53D1;&#x5446;&#x7684;&#x6700;&#x957F;&#x65F6;&#x95F4;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6237;&#x8FDF;&#x8FDF;&#x4E0D;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x8FDE;&#x63A5;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x65AD;&#x5F00;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#xFF08;<code>LoginGraceTime 60</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x4E3A;<code>0</code>&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x3002;</p>
+<p><strong>LogLevel</strong></p>
+<p><code>LogLevel</code>&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x7684;&#x8BE6;&#x7EC6;&#x7A0B;&#x5EA6;&#xFF0C;&#x53EF;&#x80FD;&#x7684;&#x503C;&#x4F9D;&#x6B21;&#x4E3A;<code>QUIET</code>&#x3001;<code>FATAL</code>&#x3001;<code>ERROR</code>&#x3001;<code>INFO</code>&#x3001;<code>VERBOSE</code>&#x3001;<code>DEBUG</code>&#x3001;<code>DEBUG1</code>&#x3001;<code>DEBUG2</code>&#x3001;<code>DEBUG3</code>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>INFO</code>&#xFF08;<code>LogLevel INFO</code>&#xFF09;&#x3002;</p>
+<p><strong>MACs</strong></p>
+<p><code>MACs</code>&#x6307;&#x5B9A;sshd &#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x7B97;&#x6CD5;&#xFF08;<code>MACs hmac-sha1</code>&#xFF09;&#xFF0C;&#x591A;&#x4E2A;&#x7B97;&#x6CD5;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</p>
+<p><strong>MaxAuthTries</strong></p>
+<p><code>MaxAuthTries</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8; SSH &#x767B;&#x5F55;&#x7684;&#x6700;&#x5927;&#x5C1D;&#x8BD5;&#x6B21;&#x6570;&#xFF08;<code>MaxAuthTries 3</code>&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x9519;&#x8BEF;&#x8FBE;&#x5230;&#x6307;&#x5B9A;&#x6B21;&#x6570;&#xFF0C;SSH &#x8FDE;&#x63A5;&#x5C06;&#x5173;&#x95ED;&#x3002;</p>
+<p><strong>MaxStartups</strong></p>
+<p><code>MaxStartups</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8;&#x540C;&#x65F6;&#x5E76;&#x53D1;&#x7684; SSH &#x8FDE;&#x63A5;&#x6570;&#x91CF;&#xFF08;MaxStartups&#xFF09;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x4E3A;<code>0</code>&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x4E3A;<code>A:B:C</code>&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982;<code>MaxStartups 10:50:20</code>&#xFF0C;&#x8868;&#x793A;&#x5982;&#x679C;&#x8FBE;&#x5230;10&#x4E2A;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x5C06;&#x6709;50%&#x7684;&#x6982;&#x7387;&#x88AB;&#x62D2;&#x7EDD;&#xFF1B;&#x5982;&#x679C;&#x8FBE;&#x5230;20&#x4E2A;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#xFF0C;&#x5219;&#x540E;&#x9762;&#x7684;&#x8FDE;&#x63A5;&#x5C06;100%&#x88AB;&#x62D2;&#x7EDD;&#x3002;</p>
+<p><strong>PasswordAuthentication</strong></p>
+<p><code>PasswordAuthentication</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>PasswordAuthentication yes</code>&#xFF09;&#xFF0C;&#x5EFA;&#x8BAE;&#x6539;&#x6210;<code>no</code>&#xFF08;&#x7981;&#x6B62;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#xFF09;&#x3002;</p>
+<p><strong>PermitEmptyPasswords</strong></p>
+<p><code>PermitEmptyPasswords</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x7A7A;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x5373;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x4E3A;&#x7A7A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>yes</code>&#xFF08;<code>PermitEmptyPasswords yes</code>&#xFF09;&#xFF0C;&#x5EFA;&#x8BAE;&#x6539;&#x6210;<code>no</code>&#xFF08;&#x7981;&#x6B62;&#x65E0;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF09;&#x3002;</p>
+<p><strong>PermitRootLogin</strong></p>
+<p><code>PermitRootLogin</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x6839;&#x7528;&#x6237;&#x767B;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>yes</code>&#xFF08;<code>PermitRootLogin yes</code>&#xFF09;&#xFF0C;&#x5EFA;&#x8BAE;&#x6539;&#x6210;<code>no</code>&#xFF08;&#x7981;&#x6B62;&#x6839;&#x7528;&#x6237;&#x767B;&#x5F55;&#xFF09;&#x3002;</p>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#x662F;&#x5199;&#x6210;<code>prohibit-password</code>&#xFF0C;&#x8868;&#x793A; root &#x7528;&#x6237;&#x4E0D;&#x80FD;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x7528;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x3002;</p>
+<pre><code class="lang-text">PermitRootLogin prohibit-password
+</code></pre>
+<p><strong>PermitUserEnvironment</strong></p>
+<p><code>PermitUserEnvironment</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8; sshd &#x52A0;&#x8F7D;&#x5BA2;&#x6237;&#x7AEF;&#x7684;<code>~/.ssh/environment</code>&#x6587;&#x4EF6;&#x548C;<code>~/.ssh/authorized_keys</code>&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x7684;<code>environment= options</code>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>no</code>&#xFF08;<code>PermitUserEnvironment no</code>&#xFF09;&#x3002;</p>
+<p><strong>Port</strong></p>
+<p><code>Port</code>&#x6307;&#x5B9A; sshd &#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x5373;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;22&#xFF08;<code>Port 22</code>&#xFF09;&#x3002;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x8003;&#x8651;&#xFF0C;&#x53EF;&#x4EE5;&#x6539;&#x6389;&#x8FD9;&#x4E2A;&#x7AEF;&#x53E3;&#xFF08;&#x6BD4;&#x5982;<code>Port 8822</code>&#xFF09;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;<code>Port</code>&#x547D;&#x4EE4;&#xFF0C;&#x540C;&#x65F6;&#x76D1;&#x542C;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;&#x3002;</p>
+<pre><code class="lang-text">Port 22
+Port 80
+Port 443
+Port 8080
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x793A;&#x4F8B;&#x8868;&#x793A;&#x540C;&#x65F6;&#x76D1;&#x542C;4&#x4E2A;&#x7AEF;&#x53E3;&#x3002;</p>
+<p><strong>PrintMotd</strong></p>
+<p><code>PrintMotd</code>&#x6307;&#x5B9A;&#x7528;&#x6237;&#x767B;&#x5F55;&#x540E;&#xFF0C;&#x662F;&#x5426;&#x5411;&#x5176;&#x5C55;&#x793A;&#x7CFB;&#x7EDF;&#x7684; motd&#xFF08;Message of the day&#xFF09;&#x7684;&#x4FE1;&#x606F;&#x6587;&#x4EF6;<code>/etc/motd</code>&#x3002;&#x8BE5;&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x901A;&#x77E5;&#x6240;&#x6709;&#x7528;&#x6237;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x4E8B;&#x9879;&#xFF0C;&#x6BD4;&#x5982;&#x7CFB;&#x7EDF;&#x7EF4;&#x62A4;&#x65F6;&#x95F4;&#x3001;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x7B49;&#x7B49;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>PrintMotd yes</code>&#xFF09;&#xFF0C;&#x7531;&#x4E8E; Shell &#x4E00;&#x822C;&#x4F1A;&#x5C55;&#x793A;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x6587;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x6539;&#x4E3A;<code>no</code>&#x3002;</p>
+<p><strong>PrintLastLog</strong></p>
+<p><code>PrintLastLog</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x6253;&#x5370;&#x4E0A;&#x4E00;&#x6B21;&#x7528;&#x6237;&#x767B;&#x5F55;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>PrintLastLog yes</code>&#xFF09;&#x3002;</p>
+<p><strong>Protocol</strong></p>
+<p><code>Protocol</code>&#x6307;&#x5B9A; sshd &#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x3002;<code>Protocol 1</code>&#x8868;&#x793A;&#x4F7F;&#x7528; SSH 1 &#x534F;&#x8BAE;&#xFF0C;&#x5EFA;&#x8BAE;&#x6539;&#x6210;<code>Protocol 2</code>&#xFF08;&#x4F7F;&#x7528; SSH 2 &#x534F;&#x8BAE;&#xFF09;&#x3002;<code>Protocol 2,1</code>&#x8868;&#x793A;&#x540C;&#x65F6;&#x652F;&#x6301;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<p><strong>PubKeyAuthentication</strong></p>
+<p><code>PubKeyAuthentication</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x516C;&#x94A5;&#x767B;&#x5F55;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>PubKeyAuthentication yes</code>&#xFF09;&#x3002;</p>
+<p><strong>QuietMode</strong></p>
+<p>SSH 1 &#x7248;&#x672C;&#x4E13;&#x7528;&#xFF0C;&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x53EA;&#x8F93;&#x51FA;&#x81F4;&#x547D;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF08;<code>QuietMode yes</code>&#xFF09;&#x3002;</p>
+<p><strong>RSAAuthentication</strong></p>
+<p><code>RSAAuthentication</code>&#x6307;&#x5B9A;&#x5141;&#x8BB8; RSA &#x8BA4;&#x8BC1;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>RSAAuthentication yes</code>&#xFF09;&#x3002;</p>
+<p><strong>ServerKeyBits</strong></p>
+<p><code>ServerKeyBits</code>&#x6307;&#x5B9A; SSH 1 &#x7248;&#x672C;&#x7684;&#x5BC6;&#x94A5;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x65F6;&#x7684;&#x4F4D;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;768&#xFF08;<code>ServerKeyBits 768</code>&#xFF09;&#x3002;</p>
+<p><strong>StrictModes</strong></p>
+<p><code>StrictModes</code>&#x6307;&#x5B9A; sshd &#x662F;&#x5426;&#x68C0;&#x67E5;&#x7528;&#x6237;&#x7684;&#x4E00;&#x4E9B;&#x91CD;&#x8981;&#x6587;&#x4EF6;&#x548C;&#x76EE;&#x5F55;&#x7684;&#x6743;&#x9650;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A;<code>yes</code>&#xFF08;<code>StrictModes yes</code>&#xFF09;&#xFF0C;&#x5373;&#x5BF9;&#x4E8E;&#x7528;&#x6237;&#x7684; SSH &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3001;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x548C;&#x6240;&#x5728;&#x76EE;&#x5F55;&#xFF0C;SSH &#x8981;&#x6C42;&#x62E5;&#x6709;&#x8005;&#x5FC5;&#x987B;&#x662F;&#x6839;&#x7528;&#x6237;&#x6216;&#x7528;&#x6237;&#x672C;&#x4EBA;&#xFF0C;&#x7528;&#x6237;&#x7EC4;&#x548C;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x5199;&#x6743;&#x9650;&#x5FC5;&#x987B;&#x5173;&#x95ED;&#x3002;</p>
+<p><strong>SyslogFacility</strong></p>
+<p><code>SyslogFacility</code>&#x6307;&#x5B9A; Syslog &#x5982;&#x4F55;&#x5904;&#x7406; sshd &#x7684;&#x65E5;&#x5FD7;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F; Auth&#xFF08;<code>SyslogFacility AUTH</code>&#xFF09;&#x3002;</p>
+<p><strong>TCPKeepAlive</strong></p>
+<p><code>TCPKeepAlive</code>&#x6307;&#x5B9A;&#x6253;&#x5F00; sshd &#x8DDF;&#x5BA2;&#x6237;&#x7AEF; TCP &#x8FDE;&#x63A5;&#x7684; keepalive &#x53C2;&#x6570;&#xFF08;<code>TCPKeepAlive yes</code>&#xFF09;&#x3002;</p>
+<p><strong>UseDNS</strong></p>
+<p><code>UseDNS</code>&#x6307;&#x5B9A;&#x7528;&#x6237; SSH &#x767B;&#x5F55;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x662F;&#x5426;&#x4F7F;&#x7528; DNS&#xFF0C;&#x786E;&#x8BA4;&#x8BE5;&#x57DF;&#x540D;&#x5BF9;&#x5E94;&#x7684; IP &#x5730;&#x5740;&#x5305;&#x542B;&#x672C;&#x673A;&#xFF08;<code>UseDNS yes</code>&#xFF09;&#x3002;&#x6253;&#x5F00;&#x8BE5;&#x9009;&#x9879;&#x610F;&#x4E49;&#x4E0D;&#x5927;&#xFF0C;&#x800C;&#x4E14;&#x5982;&#x679C; DNS &#x66F4;&#x65B0;&#x4E0D;&#x53CA;&#x65F6;&#xFF0C;&#x8FD8;&#x6709;&#x53EF;&#x80FD;&#x8BEF;&#x5224;&#xFF0C;&#x5EFA;&#x8BAE;&#x5173;&#x95ED;&#x3002;</p>
+<p><strong>UseLogin</strong></p>
+<p><code>UseLogin</code>&#x6307;&#x5B9A;&#x7528;&#x6237;&#x8BA4;&#x8BC1;&#x5185;&#x90E8;&#x662F;&#x5426;&#x4F7F;&#x7528;<code>/usr/bin/login</code>&#x66FF;&#x4EE3; SSH &#x5DE5;&#x5177;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;<code>no</code>&#xFF08;<code>UseLogin no</code>&#xFF09;&#x3002;</p>
+<p><strong>UserPrivilegeSeparation</strong></p>
+<p><code>UserPrivilegeSeparation</code>&#x6307;&#x5B9A;&#x7528;&#x6237;&#x8BA4;&#x8BC1;&#x901A;&#x8FC7;&#x4EE5;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x5B50;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x7528;&#x6237;&#x6743;&#x9650;&#x76F8;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x5229;&#x4E8E;&#x63D0;&#x9AD8;&#x5B89;&#x5168;&#x6027;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>yes</code>&#xFF08;<code>UsePrivilegeSeparation yes</code>&#xFF09;&#x3002;</p>
+<p><strong>VerboseMode</strong></p>
+<p>SSH 2 &#x7248;&#x672C;&#x4E13;&#x7528;&#xFF0C;&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#x8BE6;&#x7EC6;&#x7684; Debug &#x4FE1;&#x606F;&#xFF08;<code>VerboseMode yes</code>&#xFF09;&#x3002;</p>
+<p><strong>X11Forwarding</strong></p>
+<p><code>X11Forwarding</code>&#x6307;&#x5B9A;&#x662F;&#x5426;&#x6253;&#x5F00; X window &#x7684;&#x8F6C;&#x53D1;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; no&#xFF08;<code>X11Forwarding no</code>&#xFF09;&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x9A8C;&#x8BC1;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6709;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -t
+</code></pre>
+<p>&#x65B0;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x751F;&#x6548;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x542F; sshd&#x3002;</p>
+<pre><code class="lang-text">$ sudo systemctl restart sshd
+</code></pre>
+<h3 id="sshd-&#x7684;&#x547D;&#x4EE4;&#x884C;&#x914D;&#x7F6E;&#x9879;-">sshd &#x7684;&#x547D;&#x4EE4;&#x884C;&#x914D;&#x7F6E;&#x9879; <a id="sshd-&#x7684;&#x547D;&#x4EE4;&#x884C;&#x914D;&#x7F6E;&#x9879;"></a></h3>
+<p>sshd &#x547D;&#x4EE4;&#x6709;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#x3002;&#x8FD9;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#x5728;&#x8C03;&#x7528;&#x65F6;&#x6307;&#x5B9A;&#xFF0C;&#x53EF;&#x4EE5;&#x8986;&#x76D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8BBE;&#x7F6E;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;<code>-d</code></p>
+<p><code>-d</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x663E;&#x793A; debug &#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -d
+</code></pre>
+<p>&#xFF08;2&#xFF09;<code>-D</code></p>
+<p><code>-D</code>&#x53C2;&#x6570;&#x6307;&#x5B9A; sshd &#x4E0D;&#x4F5C;&#x4E3A;&#x540E;&#x53F0;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -D
+</code></pre>
+<p>&#xFF08;3&#xFF09;<code>-e</code></p>
+<p><code>-e</code>&#x53C2;&#x6570;&#x5C06; sshd &#x5199;&#x5165;&#x7CFB;&#x7EDF;&#x65E5;&#x5FD7; syslog &#x7684;&#x5185;&#x5BB9;&#x5BFC;&#x5411;&#x6807;&#x51C6;&#x9519;&#x8BEF;&#xFF08;standard error&#xFF09;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;<code>-f</code></p>
+<p><code>-f</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#xFF08;5&#xFF09;<code>-h</code></p>
+<p><code>-h</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -h /usr/local/ssh/my_rsa_key
+</code></pre>
+<p>&#xFF08;6&#xFF09;<code>-o</code></p>
+<p><code>-o</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x9879;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -o &quot;Port 2034&quot;
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x9879;&#x548C;&#x5BF9;&#x5E94;&#x503C;&#x4E4B;&#x95F4;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7B49;&#x53F7;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -o &quot;Port = 2034&quot;
+</code></pre>
+<p>&#x5982;&#x679C;&#x7701;&#x7565;&#x7B49;&#x53F7;&#x524D;&#x540E;&#x7684;&#x7A7A;&#x683C;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x4F7F;&#x7528;&#x5F15;&#x53F7;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -o Port=2034
+</code></pre>
+<p><code>-o</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x914D;&#x7F6E;&#x5173;&#x952E;&#x5B57;&#x3002;</p>
+<p>&#xFF08;7&#xFF09;<code>-p</code></p>
+<p><code>-p</code>&#x53C2;&#x6570;&#x6307;&#x5B9A; sshd &#x7684;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -p 2034
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x6307;&#x5B9A; sshd &#x5728;<code>2034</code>&#x7AEF;&#x53E3;&#x542F;&#x52A8;&#x3002;</p>
+<p><code>-p</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;&#x3002;</p>
+<pre><code class="lang-text">$ sshd -p 2222 -p 3333
+</code></pre>
+<p>&#xFF08;8&#xFF09;<code>-t</code></p>
+<p><code>-t</code>&#x53C2;&#x6570;&#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x8BED;&#x6CD5;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ssh-mi-yao-deng-lu.html" class="navigation navigation-prev " aria-label="Previous page: SSH 密钥登录">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ssh-duan-kou-zhuan-fa.html" class="navigation navigation-next " aria-label="Next page: SSH 端口转发">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH 服务器","level":"7.4","depth":1,"next":{"title":"SSH 端口转发","level":"7.5","depth":1,"path":"ssh/ssh-duan-kou-zhuan-fa.md","ref":"ssh/ssh-duan-kou-zhuan-fa.md","articles":[]},"previous":{"title":"SSH 密钥登录","level":"7.3","depth":1,"path":"ssh/ssh-mi-yao-deng-lu.md","ref":"ssh/ssh-mi-yao-deng-lu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ssh/ssh-fu-wu-qi.md","mtime":"2021-10-20T22:00:38.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T03:37:38.691Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
