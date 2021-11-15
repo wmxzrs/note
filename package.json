@@ -1,0 +1,23 @@
+{
+  "name": "gitbook-cli",
+  "version": "2.3.2",
+  "description": "gitbook-cli tool",
+  "main": "index.js",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gitbook -V"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmxzrs/note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wmxzrs/note/issues"
+  },
+  "homepage": "https://github.com/wmxzrs/note#readme"
+}
