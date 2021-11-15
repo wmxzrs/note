@@ -22,11 +22,11 @@ jobs:
             
           - name: setup-gitbook-cli
             run: |
-             npm ci
              npm install gitbook-cli -g
              gitbook ls-remote
              gitbook fetch "3.2.3"
              gitbook -V
+             cat package.json
           - name: build&deploy
             env:
               NOTE_DEPLOY_KEY: ${{ secrets.NOTE_DEPLOY_KEY }}
