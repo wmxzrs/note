@@ -34,6 +34,7 @@ jobs:
              gitbook build
              ls -R
              cd ./_book
+             git config --global init.defaultBranch main
              git init
              git config user.name "actionscript"
              git config user.email "wmxzrs@outlook.com"
