@@ -1,8 +1,5 @@
 
-name: note-auto-deploy
-env:
-    NOTE_DEPLOY_KEY: ${{ secrets.NOTE_DEPLOY_KEY }
-    
+name: note-auto-deploy    
 on: 
     push:
       branches:
@@ -31,6 +28,8 @@ jobs:
              gitbook fetch "3.2.3"
              gitbook -V
           - name: build&deploy
+            env:
+              NOTE_DEPLOY_KEY: ${{ secrets.NOTE_DEPLOY_KEY }
             run: |
              gitbook build
              ls -R
