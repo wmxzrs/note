@@ -1,0 +1,45 @@
+
+name: note-auto-deploy    
+on: 
+  push:
+      branches:
+        - master
+jobs:
+
+  build_pages:
+    runs-on: ubuntu-latest
+    steps:
+          - name: set-timezone
+            run: |
+               cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          - name: checkout-source
+            uses: actions/checkout@v2
+       
+          - name: setup-nodejs
+            uses: actions/setup-node@v1
+            with: 
+              node-version: "10.22"
+            
+          - name: setup-gitbook-cli
+            run: |
+             npm install gitbook-cli -g
+             gitbook ls-remote
+             gitbook fetch "3.2.3"
+             gitbook -V
+             
+          - name: build&deploy
+            env:
+              NOTE_DEPLOY_KEY: ${{ secrets.NOTE_DEPLOY_KEY }}
+            run: |
+             gitbook build
+             ls -R
+             cd ./_book
+             git config --global init.defaultBranch main
+             git init
+             git config user.name "actionscript"
+             git config user.email "wmxzrs@outlook.com"
+             git remote add origin "https://wmxzrs:$NOTE_DEPLOY_KEY@github.com/wmxzrs/note.git"
+             git add -A
+             git commit -m "Action-Script auto deploy at '$(date)'"
+             git push origin main --force 
+             cd -

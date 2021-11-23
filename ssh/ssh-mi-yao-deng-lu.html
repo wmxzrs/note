@@ -1,0 +1,690 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSH 密钥登录 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ssh-fu-wu-qi.html" />
+    
+    
+    <link rel="prev" href="ssh-ke-hu-duan.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ReadMe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">我的笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../wo-de-bi-ji/javascript.html">
+            
+                <a href="../wo-de-bi-ji/javascript.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../wo-de-bi-ji/css.html">
+            
+                <a href="../wo-de-bi-ji/css.html">
+            
+                    
+                    css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../wo-de-bi-ji/git.html">
+            
+                <a href="../wo-de-bi-ji/git.html">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../wo-de-bi-ji/ssh.html">
+            
+                <a href="../wo-de-bi-ji/ssh.html">
+            
+                    
+                    ssh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../wo-de-bi-ji/mysql-and-php.html">
+            
+                <a href="../wo-de-bi-ji/mysql-and-php.html">
+            
+                    
+                    mysql&php
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../wo-de-bi-ji/html.html">
+            
+                <a href="../wo-de-bi-ji/html.html">
+            
+                    
+                    html
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../wo-de-bi-ji/shell.html">
+            
+                <a href="../wo-de-bi-ji/shell.html">
+            
+                    
+                    shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">我的书籍</li>
+        
+        
+    
+
+    
+        
+        <li class="header">随想</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../wo-de-shu-ji/imagine/ye-se.html">
+            
+                <a href="../wo-de-shu-ji/imagine/ye-se.html">
+            
+                    
+                    序章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">小说</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../wo-de-shu-ji/novel/chapter1.html">
+            
+                <a href="../wo-de-shu-ji/novel/chapter1.html">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Coding Note</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../coding-note/untitled.html">
+            
+                <a href="../coding-note/untitled.html">
+            
+                    
+                    云函数 | serverless
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">SSH</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="untitled.html">
+            
+                <a href="untitled.html">
+            
+                    
+                    SSH 基本知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ssh-ke-hu-duan.html">
+            
+                <a href="ssh-ke-hu-duan.html">
+            
+                    
+                    SSH 客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.3" data-path="ssh-mi-yao-deng-lu.html">
+            
+                <a href="ssh-mi-yao-deng-lu.html">
+            
+                    
+                    SSH 密钥登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="ssh-fu-wu-qi.html">
+            
+                <a href="ssh-fu-wu-qi.html">
+            
+                    
+                    SSH 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="ssh-duan-kou-zhuan-fa.html">
+            
+                <a href="ssh-duan-kou-zhuan-fa.html">
+            
+                    
+                    SSH 端口转发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="ssh-zheng-shu-deng-lu.html">
+            
+                <a href="ssh-zheng-shu-deng-lu.html">
+            
+                    
+                    SSH 证书登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="scp-ming-ling.html">
+            
+                <a href="scp-ming-ling.html">
+            
+                    
+                    scp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="untitled-2.html">
+            
+                <a href="untitled-2.html">
+            
+                    
+                    rsync 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="untitled-1.html">
+            
+                <a href="untitled-1.html">
+            
+                    
+                    sftp 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SSH 密钥登录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssh-&#x5BC6;&#x94A5;&#x767B;&#x5F55;">SSH &#x5BC6;&#x94A5;&#x767B;&#x5F55;</h1>
+<p>SSH &#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x6709;&#x5F88;&#x591A;&#x7F3A;&#x70B9;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x5BB9;&#x6613;&#x8BB0;&#x5FC6;&#xFF0C;&#x6BCF;&#x6B21;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x4E5F;&#x5F88;&#x9EBB;&#x70E6;&#x3002;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x662F;&#x6BD4;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x66F4;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<h3 id="&#x5BC6;&#x94A5;&#x662F;&#x4EC0;&#x4E48;-">&#x5BC6;&#x94A5;&#x662F;&#x4EC0;&#x4E48; <a id="&#x5BC6;&#x94A5;&#x662F;&#x4EC0;&#x4E48;"></a></h3>
+<p>&#x5BC6;&#x94A5;&#xFF08;key&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5927;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x901A;&#x8FC7;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x5F97;&#x5230;&#x3002;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;&#xFF0C;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x5BC6;&#x94A5;&#x6210;&#x5BF9;&#x4F7F;&#x7528;&#xFF0C;&#x5206;&#x4E3A;&#x516C;&#x94A5;&#xFF08;public key&#xFF09;&#x548C;&#x79C1;&#x94A5;&#xFF08;private key&#xFF09;&#x3002;</p>
+<p>SSH &#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x91C7;&#x7528;&#x7684;&#x662F;&#x975E;&#x5BF9;&#x79F0;&#x52A0;&#x5BC6;&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x79C1;&#x94A5;&#x5FC5;&#x987B;&#x79C1;&#x5BC6;&#x4FDD;&#x5B58;&#xFF0C;&#x4E0D;&#x80FD;&#x6CC4;&#x6F0F;&#xFF1B;&#x516C;&#x94A5;&#x5219;&#x662F;&#x516C;&#x5F00;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x5916;&#x53D1;&#x9001;&#x3002;&#x5B83;&#x4EEC;&#x7684;&#x5173;&#x7CFB;&#x662F;&#xFF0C;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x79C1;&#x94A5;&#x90FD;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x53CD;&#x4E4B;&#x4EA6;&#x7136;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x52A0;&#x5BC6;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x6709;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x624D;&#x80FD;&#x89E3;&#x5BC6;&#xFF0C;&#x5176;&#x4ED6;&#x5BC6;&#x94A5;&#x90FD;&#x4E0D;&#x884C;&#xFF1B;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x79C1;&#x94A5;&#x52A0;&#x5BC6;&#xFF08;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E00;&#x822C;&#x79F0;&#x4E3A;&#x201C;&#x7B7E;&#x540D;&#x201D;&#xFF09;&#xFF0C;&#x4E5F;&#x53EA;&#x6709;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x516C;&#x94A5;&#x89E3;&#x5BC6;&#x3002;</p>
+<h3 id="&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x7684;&#x8FC7;&#x7A0B;-">&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x7684;&#x8FC7;&#x7A0B; <a id="&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x7684;&#x8FC7;&#x7A0B;"></a></h3>
+<p>SSH &#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x7684;&#x6B65;&#x9AA4;&#x3002;</p>
+<p>&#x9884;&#x5907;&#x6B65;&#x9AA4;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;<code>ssh-keygen</code>&#x751F;&#x6210;&#x81EA;&#x5DF1;&#x7684;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x624B;&#x52A8;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x516C;&#x94A5;&#x653E;&#x5165;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x8D77; SSH &#x767B;&#x5F55;&#x7684;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x7528;&#x6237; SSH &#x767B;&#x5F55;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x53D1;&#x9001;&#x4E00;&#x4E9B;&#x968F;&#x673A;&#x6570;&#x636E;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x8981;&#x6C42;&#x7528;&#x6237;&#x8BC1;&#x660E;&#x81EA;&#x5DF1;&#x7684;&#x8EAB;&#x4EFD;&#x3002;</p>
+<p>&#x7B2C;&#x56DB;&#x6B65;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x6765;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;&#x79C1;&#x94A5;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x53D1;&#x8FD8;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x7B2C;&#x4E94;&#x6B65;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x6765;&#x7684;&#x52A0;&#x5BC6;&#x7B7E;&#x540D;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x516C;&#x94A5;&#x89E3;&#x5BC6;&#xFF0C;&#x7136;&#x540E;&#x8DDF;&#x539F;&#x59CB;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x3002;&#x5982;&#x679C;&#x4E00;&#x81F4;&#xFF0C;&#x5C31;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x767B;&#x5F55;&#x3002;</p>
+<h3 id="ssh-key&#x547D;&#x4EE4;&#xFF1A;&#x751F;&#x6210;&#x5BC6;&#x94A5;-"><code>ssh-key</code>&#x547D;&#x4EE4;&#xFF1A;&#x751F;&#x6210;&#x5BC6;&#x94A5; <a id="ssh-key&#x547D;&#x4EE4;&#xFF1A;&#x751F;&#x6210;&#x5BC6;&#x94A5;"></a></h3>
+<h4 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;-">&#x57FA;&#x672C;&#x7528;&#x6CD5; <a id="&#x57FA;&#x672C;&#x7528;&#x6CD5;"></a></h4>
+<p>&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x751F;&#x6210;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x3002;OpenSSH &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x7A0B;&#x5E8F;<code>ssh-keygen</code>&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x6765;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x3002;</p>
+<p>&#x76F4;&#x63A5;&#x8F93;&#x5165;<code>ssh-keygen</code>&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x8BE2;&#x95EE;&#x4E00;&#x7CFB;&#x5217;&#x95EE;&#x9898;&#xFF0C;&#x7136;&#x540E;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen
+</code></pre>
+<p>&#x901A;&#x5E38;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528;<code>-t</code>&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -t dsa
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>-t</code>&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x9009;&#x62E9;<code>dsa</code>&#x7B97;&#x6CD5;&#x6216;<code>rsa</code>&#x7B97;&#x6CD5;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x6CA1;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x3002;</p>
+<p>&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4EE5;&#x540E;&#xFF0C;<code>ssh-keygen</code>&#x4F1A;&#x8981;&#x6C42;&#x7528;&#x6237;&#x56DE;&#x7B54;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -t dsa
+Generating public/private dsa key pair.
+Enter file in which to save the key (/home/username/.ssh/id_dsa):  press ENTER
+Enter passphrase (empty for no passphrase): ********
+Enter same passphrase again: ********
+Your identification has been saved in /home/username/.ssh/id_dsa.
+Your public key has been saved in /home/username/.ssh/id_dsa.pub.
+The key fingerprint is:
+14:ba:06:98:a8:98:ad:27:b5:ce:55:85:ec:64:37:19 username@shell.isp.com
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6267;&#x884C;<code>ssh-keygen</code>&#x547D;&#x4EE4;&#x4EE5;&#x540E;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x8BE2;&#x95EE;&#x5BC6;&#x94A5;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;<code>~/.ssh/id_dsa</code>&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x79C1;&#x94A5;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x516C;&#x94A5;&#x6587;&#x4EF6;<code>~/.ssh/id_dsa.pub</code>&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x3002;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x94A5;&#x4E00;&#x822C;&#x90FD;&#x653E;&#x5728;&#x4E3B;&#x76EE;&#x5F55;&#x7684;<code>.ssh</code>&#x76EE;&#x5F55;&#x91CC;&#x9762;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9009;&#x62E9;<code>rsa</code>&#x7B97;&#x6CD5;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x5C31;&#x4F1A;&#x662F;<code>~/.ssh/id_rsa</code>&#xFF08;&#x79C1;&#x94A5;&#xFF09;&#x548C;<code>~/.ssh/id_rsa.pub</code>&#xFF08;&#x516C;&#x94A5;&#xFF09;&#x3002;</p>
+<p>&#x63A5;&#x7740;&#xFF0C;&#x5C31;&#x4F1A;&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x8BE2;&#x95EE;&#x662F;&#x5426;&#x8981;&#x4E3A;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x8BBE;&#x5B9A;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#xFF08;passphrase&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x5373;&#x4F7F;&#x5165;&#x4FB5;&#x8005;&#x62FF;&#x5230;&#x79C1;&#x94A5;&#xFF0C;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x7834;&#x89E3;&#x5BC6;&#x7801;&#x3002;&#x5982;&#x679C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x4E0D;&#x60F3;&#x8BBE;&#x5B9A;&#x5BC6;&#x7801;&#x4FDD;&#x62A4;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6309;&#x56DE;&#x8F66;&#x952E;&#xFF0C;&#x5BC6;&#x7801;&#x5C31;&#x4F1A;&#x4E3A;&#x7A7A;&#x3002;&#x540E;&#x9762;&#x8FD8;&#x4F1A;&#x8BA9;&#x4F60;&#x518D;&#x8F93;&#x5165;&#x4E00;&#x6B21;&#x5BC6;&#x7801;&#xFF0C;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x5FC5;&#x987B;&#x4E00;&#x81F4;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x201C;&#x5BC6;&#x7801;&#x201D;&#x7684;&#x82F1;&#x6587;&#x5355;&#x8BCD;&#x662F; passphrase&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4E0E; Linux &#x8D26;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x5355;&#x8BCD; password &#x6DF7;&#x6DC6;&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x4E0D;&#x662F;&#x7528;&#x6237;&#x7CFB;&#x7EDF;&#x8D26;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;&#xFF0C;&#x5C4F;&#x5E55;&#x4E0A;&#x8FD8;&#x4F1A;&#x7ED9;&#x51FA;&#x516C;&#x94A5;&#x7684;&#x6307;&#x7EB9;&#xFF0C;&#x4EE5;&#x53CA;&#x5F53;&#x524D;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x4F5C;&#x4E3A;&#x6CE8;&#x91CA;&#xFF0C;&#x7528;&#x6765;&#x8BC6;&#x522B;&#x5BC6;&#x94A5;&#x7684;&#x6765;&#x6E90;&#x3002;</p>
+<p>&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x548C;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x90FD;&#x662F;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x770B;&#x4E00;&#x4E0B;&#x5B83;&#x4EEC;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-text">ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAvpB4lUbAaEbh9u6HLig7amsfywD4fqSZq2ikACIUBn3GyRPfeF93l/
+weQh702ofXbDydZAKMcDvBJqRhUotQUwqV6HJxqoqPDlPGUUyo8RDIkLUIPRyq
+ypZxmK9aCXokFiHoGCXfQ9imUP/w/jfqb9ByDtG97tUJF6nFMP5WzhM= username@shell.isp.com
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x672B;&#x5C3E;&#x7684;<code>username@shell.isp.com</code>&#x662F;&#x516C;&#x94A5;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x7528;&#x6765;&#x8BC6;&#x522B;&#x4E0D;&#x540C;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x662F;&#x54EA;&#x53F0;&#x4E3B;&#x673A;&#xFF08;<code>shell.isp.com</code>&#xFF09;&#x7684;&#x54EA;&#x4E2A;&#x7528;&#x6237;&#xFF08;<code>username</code>&#xFF09;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x4E0D;&#x662F;&#x5FC5;&#x9700;&#x9879;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x516C;&#x94A5;&#x53EA;&#x6709;&#x4E00;&#x884C;&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x592A;&#x957F;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x9762;&#x5206;&#x6210;&#x4E09;&#x884C;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5217;&#x51FA;&#x7528;&#x6237;&#x6240;&#x6709;&#x7684;&#x516C;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ ls -l ~/.ssh/id_*.pub
+</code></pre>
+<p>&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x4EE5;&#x540E;&#xFF0C;&#x5EFA;&#x8BAE;&#x4FEE;&#x6539;&#x5B83;&#x4EEC;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x9632;&#x6B62;&#x5176;&#x4ED6;&#x4EBA;&#x8BFB;&#x53D6;&#x3002;</p>
+<pre><code class="lang-text">$ chmod 600 ~/.ssh/id_rsa
+$ chmod 600 ~/.ssh/id_rsa.pub
+</code></pre>
+<h4 id="&#x914D;&#x7F6E;&#x9879;-">&#x914D;&#x7F6E;&#x9879; <a id="&#x914D;&#x7F6E;&#x9879;"></a></h4>
+<p><code>ssh-keygen</code>&#x7684;&#x547D;&#x4EE4;&#x884C;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#x3002;</p>
+<p><strong>&#xFF08;1&#xFF09;<code>-b</code></strong></p>
+<p><code>-b</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x5BC6;&#x94A5;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x5BC6;&#x94A5;&#x5C31;&#x8D8A;&#x4E0D;&#x5BB9;&#x6613;&#x7834;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x52A0;&#x5BC6;&#x89E3;&#x5BC6;&#x7684;&#x8BA1;&#x7B97;&#x5F00;&#x9500;&#x4E5F;&#x4F1A;&#x52A0;&#x5927;&#x3002;</p>
+<p>&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;<code>-b</code>&#x81F3;&#x5C11;&#x5E94;&#x8BE5;&#x662F;<code>1024</code>&#xFF0C;&#x66F4;&#x5B89;&#x5168;&#x4E00;&#x4E9B;&#x53EF;&#x4EE5;&#x8BBE;&#x4E3A;<code>2048</code>&#x6216;&#x8005;&#x66F4;&#x9AD8;&#x3002;</p>
+<p><strong>&#xFF08;2&#xFF09;<code>-C</code></strong></p>
+<p><code>-C</code>&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x4E3A;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x6307;&#x5B9A;&#x65B0;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;<code>username@host</code>&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x4E00;&#x4E2A;4096&#x4F4D; RSA &#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x5BC6;&#x94A5;&#x5BF9;&#xFF0C;&#x5E76;&#x4E14;&#x7ED9;&#x51FA;&#x4E86;&#x7528;&#x6237;&#x540D;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@domain.com&quot;
+</code></pre>
+<p><strong>&#xFF08;3&#xFF09;<code>-f</code></strong></p>
+<p><code>-f</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x751F;&#x6210;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -t dsa -f mykey
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4F1A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x751F;&#x6210;&#x79C1;&#x94A5;&#x6587;&#x4EF6;<code>mykey</code>&#x548C;&#x516C;&#x94A5;&#x6587;&#x4EF6;<code>mykey.pub</code>&#x3002;</p>
+<p><strong>&#xFF08;4&#xFF09;<code>-F</code></strong></p>
+<p><code>-F</code>&#x53C2;&#x6570;&#x68C0;&#x67E5;&#x67D0;&#x4E2A;&#x4E3B;&#x673A;&#x540D;&#x662F;&#x5426;&#x5728;<code>known_hosts</code>&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -F example.com
+</code></pre>
+<p><strong>&#xFF08;5&#xFF09;<code>-N</code></strong></p>
+<p><code>-N</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;&#xFF08;passphrase&#xFF09;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -t dsa -N secretword
+</code></pre>
+<p><strong>&#xFF08;6&#xFF09;<code>-p</code></strong></p>
+<p><code>-p</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x91CD;&#x65B0;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;&#xFF08;passphrase&#xFF09;&#x3002;&#x5B83;&#x4E0E;<code>-N</code>&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x65B0;&#x5BC6;&#x7801;&#x4E0D;&#x5728;&#x547D;&#x4EE4;&#x4E2D;&#x6307;&#x5B9A;&#xFF0C;&#x800C;&#x662F;&#x6267;&#x884C;&#x540E;&#x518D;&#x8F93;&#x5165;&#x3002;ssh &#x5148;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x65E7;&#x5BC6;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x4E24;&#x904D;&#x65B0;&#x5BC6;&#x7801;&#x3002;</p>
+<p><strong>&#xFF08;7&#xFF09;<code>-R</code></strong></p>
+<p><code>-R</code>&#x53C2;&#x6570;&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x4E3B;&#x673A;&#x516C;&#x94A5;&#x6307;&#x7EB9;&#x79FB;&#x51FA;<code>known_hosts</code>&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-keygen -R example.com
+</code></pre>
+<p><strong>&#xFF08;8&#xFF09;<code>-t</code></strong></p>
+<p><code>-t</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x4E00;&#x822C;&#x4E3A;<code>dsa</code>&#x6216;<code>rsa</code></p>
+<h3 id="&#x624B;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5;-">&#x624B;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5; <a id="&#x624B;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5;"></a></h3>
+<p>&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x4EE5;&#x540E;&#xFF0C;&#x516C;&#x94A5;&#x5FC5;&#x987B;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x624D;&#x80FD;&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x767B;&#x5F55;&#x3002;</p>
+<p>OpenSSH &#x89C4;&#x5B9A;&#xFF0C;&#x7528;&#x6237;&#x516C;&#x94A5;&#x4FDD;&#x5B58;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7684;<code>~/.ssh/authorized_keys</code>&#x6587;&#x4EF6;&#x3002;&#x4F60;&#x8981;&#x4EE5;&#x54EA;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x767B;&#x5F55;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5BC6;&#x94A5;&#x5C31;&#x5FC5;&#x987B;&#x4FDD;&#x5B58;&#x5728;&#x8BE5;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x7684;<code>~/.ssh/authorized_keys</code>&#x6587;&#x4EF6;&#x3002;&#x53EA;&#x8981;&#x628A;&#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E4B;&#x4E2D;&#xFF0C;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x516C;&#x94A5;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E86;&#x3002;&#x6BCF;&#x4E2A;&#x516C;&#x94A5;&#x5360;&#x636E;&#x4E00;&#x884C;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x7F16;&#x8F91;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x628A;&#x516C;&#x94A5;&#x7C98;&#x8D34;&#x8FDB;&#x53BB;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x673A;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-text">$ cat ~/.ssh/id_rsa.pub | ssh user@host &quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>user@host</code>&#x8981;&#x66FF;&#x6362;&#x6210;&#x4F60;&#x6240;&#x8981;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x4E3B;&#x673A;&#x540D;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>authorized_keys</code>&#x6587;&#x4EF6;&#x7684;&#x6743;&#x9650;&#x8981;&#x8BBE;&#x4E3A;<code>644</code>&#xFF0C;&#x5373;&#x53EA;&#x6709;&#x6587;&#x4EF6;&#x6240;&#x6709;&#x8005;&#x624D;&#x80FD;&#x5199;&#x3002;&#x5982;&#x679C;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x4E0D;&#x5BF9;&#xFF0C;SSH &#x670D;&#x52A1;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x62D2;&#x7EDD;&#x8BFB;&#x53D6;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-text">$ chmod 644 ~/.ssh/authorized_keys
+</code></pre>
+<p>&#x53EA;&#x8981;&#x516C;&#x94A5;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4E0B;&#x6B21;&#x767B;&#x5F55;&#x65F6;&#xFF0C;OpenSSH &#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x91C7;&#x7528;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#xFF0C;&#x4E0D;&#x518D;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x3002;</p>
+<pre><code class="lang-text">$ ssh -l username shell.isp.com
+Enter passphrase for key &apos;/home/you/.ssh/id_dsa&apos;: ************
+Last login: Mon Mar 24 02:17:27 2014 from ex.ample.com
+shell.isp.com&gt;
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;SSH &#x5BA2;&#x6237;&#x7AEF;&#x4F7F;&#x7528;&#x79C1;&#x94A5;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x8981;&#x6C42;&#x7528;&#x6237;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF08;passphrase&#xFF09;&#xFF0C;&#x7528;&#x6765;&#x89E3;&#x5F00;&#x79C1;&#x94A5;&#x3002;</p>
+<h3 id="ssh-copy-id-&#x547D;&#x4EE4;&#xFF1A;&#x81EA;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5;-">ssh-copy-id &#x547D;&#x4EE4;&#xFF1A;&#x81EA;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5; <a id="ssh-copy-id-&#x547D;&#x4EE4;&#xFF1A;&#x81EA;&#x52A8;&#x4E0A;&#x4F20;&#x516C;&#x94A5;"></a></h3>
+<p>OpenSSH &#x81EA;&#x5E26;&#x4E00;&#x4E2A;<code>ssh-copy-id</code>&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5C06;&#x516C;&#x94A5;&#x62F7;&#x8D1D;&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;<code>~/.ssh/authorized_keys</code>&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;<code>~/.ssh/authorized_keys</code>&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;<code>ssh-copy-id</code>&#x547D;&#x4EE4;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x8BE5;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x5728;&#x672C;&#x5730;&#x8BA1;&#x7B97;&#x673A;&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x672C;&#x5730;&#x7684;&#x516C;&#x94A5;&#x62F7;&#x8D1D;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-copy-id -i key_file user@host
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>-i</code>&#x53C2;&#x6570;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;<code>user</code>&#x662F;&#x6240;&#x8981;&#x767B;&#x5F55;&#x7684;&#x8D26;&#x6237;&#x540D;&#xFF0C;<code>host</code>&#x662F;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;&#x5982;&#x679C;&#x7701;&#x7565;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x5F53;&#x524D;&#x7684;&#x672C;&#x673A;&#x7528;&#x6237;&#x540D;&#x3002;&#x6267;&#x884C;&#x5B8C;&#x8BE5;&#x547D;&#x4EE4;&#xFF0C;&#x516C;&#x94A5;&#x5C31;&#x4F1A;&#x62F7;&#x8D1D;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x4E0D;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x548C;<code>.pub</code>&#x540E;&#x7F00;&#x540D;&#xFF0C;<code>ssh-copy-id</code>&#x4F1A;&#x81EA;&#x52A8;&#x5728;<code>~/.ssh</code>&#x76EE;&#x5F55;&#x91CC;&#x9762;&#x5BFB;&#x627E;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-copy-id -i id_rsa user@host
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#x4F1A;&#x81EA;&#x52A8;&#x5339;&#x914D;&#x5230;<code>~/.ssh/id_rsa.pub</code>&#x3002;</p>
+<p><code>ssh-copy-id</code>&#x4F1A;&#x91C7;&#x7528;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>ssh-copy-id</code>&#x662F;&#x76F4;&#x63A5;&#x5C06;&#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230;<code>authorized_keys</code>&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x3002;&#x5982;&#x679C;<code>authorized_keys</code>&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6362;&#x884C;&#x7B26;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x65B0;&#x7684;&#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230;&#x524D;&#x4E00;&#x4E2A;&#x516C;&#x94A5;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x4E24;&#x4E2A;&#x516C;&#x94A5;&#x8FDE;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x4F7F;&#x5F97;&#x5B83;&#x4EEC;&#x90FD;&#x65E0;&#x6CD5;&#x751F;&#x6548;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;<code>authorized_keys</code>&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x4F7F;&#x7528;<code>ssh-copy-id</code>&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#xFF0C;&#x52A1;&#x5FC5;&#x4FDD;&#x8BC1;<code>authorized_keys</code>&#x6587;&#x4EF6;&#x7684;&#x672B;&#x5C3E;&#x662F;&#x6362;&#x884C;&#x7B26;&#xFF08;&#x5047;&#x8BBE;&#x8BE5;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF09;&#x3002;</p>
+<h3 id="ssh-agent-&#x547D;&#x4EE4;&#xFF0C;ssh-add-&#x547D;&#x4EE4;-">ssh-agent &#x547D;&#x4EE4;&#xFF0C;ssh-add &#x547D;&#x4EE4; <a id="ssh-agent-&#x547D;&#x4EE4;&#xFF0C;ssh-add-&#x547D;&#x4EE4;"></a></h3>
+<h4 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;-">&#x57FA;&#x672C;&#x7528;&#x6CD5; <a id="&#x57FA;&#x672C;&#x7528;&#x6CD5;-1"></a></h4>
+<p>&#x79C1;&#x94A5;&#x8BBE;&#x7F6E;&#x4E86;&#x5BC6;&#x7801;&#x4EE5;&#x540E;&#xFF0C;&#x6BCF;&#x6B21;&#x4F7F;&#x7528;&#x90FD;&#x5FC5;&#x987B;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x6709;&#x65F6;&#x8BA9;&#x4EBA;&#x611F;&#x89C9;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8FDE;&#x7EED;&#x4F7F;&#x7528;<code>scp</code>&#x547D;&#x4EE4;&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x3002;</p>
+<p><code>ssh-agent</code>&#x547D;&#x4EE4;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x5B83;&#x8BA9;&#x7528;&#x6237;&#x5728;&#x6574;&#x4E2A; Bash &#x5BF9;&#x8BDD;&#xFF08;session&#xFF09;&#x4E4B;&#x4E2D;&#xFF0C;&#x53EA;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528; SSH &#x547D;&#x4EE4;&#x65F6;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x79C1;&#x94A5;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x540E;&#x9762;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8F93;&#x5165;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;&#x4E86;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x65B0;&#x5EFA;&#x4E00;&#x6B21;&#x547D;&#x4EE4;&#x884C;&#x5BF9;&#x8BDD;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-agent bash
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x73AF;&#x5883;&#x4E0D;&#x662F; Bash&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x7684; Shell &#x547D;&#x4EE4;&#x4EE3;&#x66FF;&#x3002;&#x6BD4;&#x5982;<code>zsh</code>&#x548C;<code>fish</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x5728;&#x5F53;&#x524D;&#x5BF9;&#x8BDD;&#x542F;&#x7528;<code>ssh-agent</code>&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-text">$ eval `ssh-agent`
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>ssh-agent</code>&#x4F1A;&#x5148;&#x81EA;&#x52A8;&#x5728;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x5C06;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8F93;&#x51FA;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-barrett/ssh-22841-agent; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=22842; export SSH_AGENT_PID;
+echo Agent pid 22842;
+</code></pre>
+<p><code>eval</code>&#x547D;&#x4EE4;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x8FD0;&#x884C;&#x4E0A;&#x9762;&#x7684;<code>ssh-agent</code>&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#xFF0C;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x5728;&#x65B0;&#x5EFA;&#x7684; Shell &#x5BF9;&#x8BDD;&#x91CC;&#x9762;&#xFF0C;&#x4F7F;&#x7528;<code>ssh-add</code>&#x547D;&#x4EE4;&#x6DFB;&#x52A0;&#x9ED8;&#x8BA4;&#x7684;&#x79C1;&#x94A5;&#xFF08;&#x6BD4;&#x5982;<code>~/.ssh/id_rsa</code>&#xFF0C;&#x6216;<code>~/.ssh/id_dsa</code>&#xFF0C;&#x6216;<code>~/.ssh/id_ecdsa</code>&#xFF0C;&#x6216;<code>~/.ssh/id_ed25519</code>&#xFF09;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-add
+Enter passphrase for /home/you/.ssh/id_dsa: ********
+Identity added: /home/you/.ssh/id_dsa (/home/you/.ssh/id_dsa)
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x79C1;&#x94A5;&#x65F6;&#xFF0C;&#x4F1A;&#x8981;&#x6C42;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x3002;&#x4EE5;&#x540E;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x5BF9;&#x8BDD;&#x91CC;&#x9762;&#x518D;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x65F6;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x8F93;&#x5165;&#x79C1;&#x94A5;&#x7684;&#x5BC6;&#x7801;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x79C1;&#x94A5;&#x5DF2;&#x7ECF;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;&#x91CC;&#x9762;&#x4E86;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x7684;&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x79C1;&#x94A5;&#xFF0C;<code>ssh-add</code>&#x547D;&#x4EE4;&#x9700;&#x8981;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-add my-other-key-file
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>my-other-key-file</code>&#x5C31;&#x662F;&#x7528;&#x6237;&#x6307;&#x5B9A;&#x7684;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x7B2C;&#x4E09;&#x6B65;&#xFF0C;&#x4F7F;&#x7528; ssh &#x547D;&#x4EE4;&#x6B63;&#x5E38;&#x767B;&#x5F55;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+<pre><code class="lang-text">$ ssh remoteHost
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x4E2D;&#xFF0C;<code>remoteHost</code>&#x662F;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5730;&#x5740;&#xFF0C;ssh &#x4F7F;&#x7528;&#x7684;&#x662F;&#x9ED8;&#x8BA4;&#x7684;&#x79C1;&#x94A5;&#x3002;&#x8FD9;&#x65F6;&#x5982;&#x679C;&#x79C1;&#x94A5;&#x8BBE;&#x6709;&#x5BC6;&#x7801;&#xFF0C;ssh &#x5C06;&#x4E0D;&#x518D;&#x8BE2;&#x95EE;&#x5BC6;&#x7801;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x53D6;&#x51FA;&#x5185;&#x5B58;&#x91CC;&#x9762;&#x7684;&#x79C1;&#x94A5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x79C1;&#x94A5;&#x767B;&#x5F55;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528; ssh &#x547D;&#x4EE4;&#x7684;<code>-i</code>&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-text">$ ssh &#x2013;i OpenSSHPrivateKey remoteHost
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x9000;&#x51FA;<code>ssh-agent</code>&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x9000;&#x51FA;&#x5B50; Shell&#xFF08;&#x6309;&#x4E0B; Ctrl + d&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-agent -k
+</code></pre>
+<h4 id="ssh-add&#x547D;&#x4EE4;-"><code>ssh-add</code>&#x547D;&#x4EE4; <a id="ssh-add&#x547D;&#x4EE4;"></a></h4>
+<p><code>ssh-add</code>&#x547D;&#x4EE4;&#x7528;&#x6765;&#x5C06;&#x79C1;&#x94A5;&#x52A0;&#x5165;<code>ssh-agent</code>&#xFF0C;&#x5B83;&#x6709;&#x5982;&#x4E0B;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p><strong>&#xFF08;1&#xFF09;<code>-d</code></strong></p>
+<p><code>-d</code>&#x53C2;&#x6570;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x79C1;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-add -d name-of-key-file
+</code></pre>
+<p><strong>&#xFF08;2&#xFF09;<code>-D</code></strong></p>
+<p><code>-D</code>&#x53C2;&#x6570;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x5220;&#x9664;&#x6240;&#x6709;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;&#x79C1;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-add -D
+</code></pre>
+<p><strong>&#xFF08;3&#xFF09;<code>-l</code></strong></p>
+<p><code>-l</code>&#x53C2;&#x6570;&#x5217;&#x51FA;&#x6240;&#x6709;&#x5DF2;&#x7ECF;&#x6DFB;&#x52A0;&#x7684;&#x79C1;&#x94A5;&#x3002;</p>
+<pre><code class="lang-text">$ ssh-add -l
+</code></pre>
+<h3 id="&#x5173;&#x95ED;&#x5BC6;&#x7801;&#x767B;&#x5F55;-">&#x5173;&#x95ED;&#x5BC6;&#x7801;&#x767B;&#x5F55; <a id="&#x5173;&#x95ED;&#x5BC6;&#x7801;&#x767B;&#x5F55;"></a></h3>
+<p>&#x4E3A;&#x4E86;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x542F;&#x7528;&#x5BC6;&#x94A5;&#x767B;&#x5F55;&#x4E4B;&#x540E;&#xFF0C;&#x6700;&#x597D;&#x5173;&#x95ED;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;&#x767B;&#x5F55;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E; OpenSSH&#xFF0C;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x6253;&#x5F00;&#x670D;&#x52A1;&#x5668; sshd &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>/etc/ssh/sshd_config</code>&#xFF0C;&#x5C06;<code>PasswordAuthentication</code>&#x8FD9;&#x4E00;&#x9879;&#x8BBE;&#x4E3A;<code>no</code>&#x3002;</p>
+<pre><code class="lang-text">PasswordAuthentication no
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x4E0D;&#x8981;&#x5FD8;&#x4E86;&#x91CD;&#x65B0;&#x542F;&#x52A8; sshd&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x4F1A;&#x751F;&#x6548;&#x3002;</p>
+<h2 id=""> </h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ssh-ke-hu-duan.html" class="navigation navigation-prev " aria-label="Previous page: SSH 客户端">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ssh-fu-wu-qi.html" class="navigation navigation-next " aria-label="Next page: SSH 服务器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSH 密钥登录","level":"7.3","depth":1,"next":{"title":"SSH 服务器","level":"7.4","depth":1,"path":"ssh/ssh-fu-wu-qi.md","ref":"ssh/ssh-fu-wu-qi.md","articles":[]},"previous":{"title":"SSH 客户端","level":"7.2","depth":1,"path":"ssh/ssh-ke-hu-duan.md","ref":"ssh/ssh-ke-hu-duan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ssh/ssh-mi-yao-deng-lu.md","mtime":"2021-11-23T16:05:16.347Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-23T16:06:12.221Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
